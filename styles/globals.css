@@ -1,9 +1,12 @@
+/** @format */
+
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin: 0px 10px 0px 10px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -13,4 +16,75 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.react-pdf__Page__textContent span {
+  user-select: none;
+}
+
+.primaryBtn {
+  background-color: #057295;
+  color: white;
+  outline: none;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.primaryBtn:hover {
+  background-color: #0093c2;
+}
+
+.dangerBtn {
+  background-color: #ec3750;
+  color: white;
+  outline: none;
+  border: none;
+  width: 48px;
+  height: 48px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.dangerBtn:hover {
+  background-color: #7a0011;
+}
+
+#tossupBtn {
+  margin-right: 17px;
+  margin-left: 17px;
+}
+
+.Card {
+  background-color: #073645;
+  color: white;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#Timer {
+  height: 145px;
+  width: 195px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.text {
+  font-size: 24px;
+  margin-bottom: 15px;
 }

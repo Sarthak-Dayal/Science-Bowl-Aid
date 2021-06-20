@@ -63,6 +63,6 @@ Start the server
   
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/Sarthak-Dayal/Science-Bowl-Aid/blob/main/LICENSE)
 
   

@@ -10,7 +10,7 @@ https://nsb-aid.vercel.app/
 
 ![Landing Page Screenshot](https://user-images.githubusercontent.com/63827830/122662328-b8ef9100-d157-11eb-8d35-d343e251abeb.png)
 
-![App Screenshot](https://user-images.githubusercontent.com/63827830/122662350-e6d4d580-d157-11eb-9a26-811c68dd610e.png)
+![App Screenshot](https://user-images.githubusercontent.com/63827830/122663372-906b9500-d15f-11eb-9d58-95f4d0467677.png)
 
   
 ## Acknowledgements

@@ -29,7 +29,7 @@ export default function RoundComponent(props) {
   };
   return (
     <div>
-      <Document file={`https://cors-anywhere.herokuapp.com/${linkMap[setNum]}`}>
+      <Document file={`${linkMap[setNum]}`}>
         <Page pageNumber={1} width={w} />
         <Page pageNumber={2} width={w} />
         <Page pageNumber={3} width={w} />

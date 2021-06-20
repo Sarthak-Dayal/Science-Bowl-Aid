@@ -22,7 +22,6 @@ https://nsb-aid.vercel.app/
 
 Contributions are always welcome! Help me take this project to the next level by improving mobile UI and adding features. You don't have to commit code to help  out; you can also open issues, add to discussion on other issues and PRs and provide feedback in discussions or issues.
 
-See `contributing.md` for ways to get started.
 ## Run Locally
 
 Clone the project

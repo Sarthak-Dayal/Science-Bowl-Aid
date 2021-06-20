@@ -1,12 +1,21 @@
 /** @format */
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 html,
 body {
   padding: 0;
-  margin: 0px 10px 0px 10px;
+  margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   overflow-x: hidden;
+}
+.timer {
+  position: fixed;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
 }
 
 a {
@@ -23,38 +32,36 @@ a {
 
 .primaryBtn {
   background-color: #057295;
-  color: white;
-  outline: none;
-  border: none;
-  width: 48px;
-  height: 48px;
-  border-radius: 5px;
-  font-size: 12px;
-  text-align: center;
 }
-
 .primaryBtn:hover {
   background-color: #0093c2;
 }
 
-.dangerBtn {
-  background-color: #ec3750;
+.dangerBtn,
+.primaryBtn {
+  cursor: pointer;
   color: white;
   outline: none;
   border: none;
-  width: 48px;
-  height: 48px;
-  font-size: 12px;
-  border-radius: 5px;
+  width: 2.86vw;
+  height: 2.86vw;
+  font-size: 0.7vw;
+  border-radius: 0.29vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.dangerBtn {
+  background-color: #ec3750;
+}
 .dangerBtn:hover {
   background-color: #7a0011;
 }
 
 #tossupBtn {
-  margin-right: 17px;
-  margin-left: 17px;
+  margin-right: 1.01vw;
+  margin-left: 1.01vw;
 }
 
 .Card {
@@ -71,8 +78,56 @@ a {
 }
 
 #Timer {
-  height: 145px;
-  width: 195px;
+  height: 8.6vw;
+  width: 11.67vw;
+}
+
+#Scorer {
+  width: 18.21vw;
+  height: 5.06vw;
+  background-color: #073645;
+  border-radius: 0.36vw;
+  font-size: 1.07vw;
+  color: white;
+}
+
+#Scorer,
+#Timer {
+  opacity: 0.8;
+}
+
+#Scorer:hover,
+#Timer:hover {
+  opacity: 1;
+}
+
+#Scorer h3 {
+  text-align: center;
+  font-family: "Roboto";
+}
+
+#Scorer button {
+  font-size: 1.07vw;
+  text-align: center;
+  width: 2.4vw;
+  height: 1.2vw;
+  border-radius: 0.12vw;
+  margin: 0px 0.3vw;
+  font-family: "Roboto";
+  padding-bottom: 0.7vw;
+  padding-top: 0.7vw;
+}
+#Scorer p {
+  padding: 0px 1.2vw;
+  margin: 0px 0.9vw;
+  font-size: 1.07vw;
+  background-color: #3b575b;
+  font-family: "Roboto";
+}
+
+#scorerContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .cardHeader {
@@ -81,10 +136,238 @@ a {
 }
 
 .title {
-  font-size: 12px;
+  font-size: 0.7vw;
 }
 
 .text {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 1.4vw;
+  margin-bottom: 0.89vw;
+}
+
+.navbar {
+  flex-wrap: wraps;
+  position: absolute;
+  top: 0;
+  border-radius: 2vw;
+  left: 1vw;
+  margin: 5vh 0vw;
+  max-height: 100vh;
+  background-color: rgba(2, 39, 60, 0.95);
+
+  padding: 1.5vw;
+  box-shadow: 0px 0px 85px rgba(2, 39, 59, 0.8);
+  text-align: center;
+  width: 12vw;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  color: white;
+  z-index: 1;
+}
+
+#navContainer {
+  background-color: rgb(2, 39, 60, 0.95);
+  width: 110vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+
+  z-index: 1;
+}
+
+#visible {
+  display: flex;
+
+  animation: 2s ease-in-out 1 grow;
+}
+
+#menuIcon {
+  display: block;
+  position: relative;
+  left: -53vw;
+  cursor: pointer;
+}
+
+.NavItem {
+  font-size: 1vw;
+  padding: 0.5vw 0vw;
+  cursor: pointer;
+  flex: 1 0 21%;
+}
+
+#navHeader {
+  display: flex;
+  width: 12vw;
+}
+
+#navBack {
+  cursor: pointer;
+  margin-left: 1.5vw;
+  margin-right: 1.2vw;
+}
+
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+  line-height: 0.5em;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #0d5878;
+  width: 100vw;
+  color: #d2f1ff;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    199.76% 404.28% at 0% 0%,
+    #d2f1ff 0%,
+    #95dafa 100%
+  );
+  width: 100vw;
+  height: 91vh;
+}
+
+.hero-title {
+  font-size: 3.75rem;
+  width: 50rem;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+.hero-title::after {
+  content: " with ease";
+  color: #0d5878;
+}
+
+.hero-body {
+  font-size: 1.5rem;
+  width: 59rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: rgb(92, 92, 92);
+}
+
+.hero-buttons {
+  width: 55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.action-button,
+.github-button {
+  outline: none;
+  border: none;
+  padding: 25px;
+  width: 260px;
+  font-size: 1.5rem;
+  margin: 0px 10px;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.action-button {
+  color: white;
+  background-color: #0d5878;
+}
+
+.github-button:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.action-button:hover {
+  background-color: #003d57;
+}
+
+.button-icon,
+.github-icon {
+  margin-bottom: -3px;
+}
+
+.button-icon {
+  margin-left: 5px;
+}
+
+.github-icon {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  #Scorer h3 {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 18px;
+  }
+
+  #Scorer button {
+    font-size: 12px;
+    text-align: center;
+    width: 48px;
+    height: 24px;
+    border-radius: 2px;
+    margin: 0px 5px;
+    font-family: "Roboto";
+    padding: 0px 10px;
+  }
+  #Scorer p {
+    padding: 4px 10px 0px 10px;
+    margin: 0px 10px;
+    font-size: 15px;
+    background-color: #3b575b;
+    font-family: "Roboto";
+  }
+  #Scorer {
+    width: 270px;
+    height: 80px;
+    background-color: #073645;
+    border-radius: 3px;
+    color: white;
+  }
+  #Timer {
+    height: 140px;
+    width: 155px;
+  }
+  .dangerBtn,
+  .primaryBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .text {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  body {
+    overflow-x: scroll;
+  }
 }

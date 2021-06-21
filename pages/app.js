@@ -39,20 +39,42 @@ export default function App() {
         <Navbar />
         <RoundComponent set={setNum} round={roundNum} />
         <Draggable>
-          <div style={{ position: "fixed", left: "86vw", top: "70px" }}>
+          <div
+            style={{ position: "fixed", left: "86vw", top: "70px" }}
+            className='draggable'>
             <Timer className='timer' />
           </div>
         </Draggable>
         <Draggable>
-          <div style={{ position: "fixed", left: 20, top: "86vh" }}>
+          <div
+            style={{ position: "fixed", left: 20, top: "86vh" }}
+            className='draggable'>
             <Scorer team={1} />
           </div>
         </Draggable>
         <Draggable>
-          <div style={{ position: "fixed", left: "80vw", top: "86vh" }}>
+          <div
+            style={{ position: "fixed", left: "80vw", top: "86vh" }}
+            className='draggable'>
             <Scorer team={2} />
           </div>
         </Draggable>
+
+        <div
+          style={{ position: "fixed", left: "1vw", bottom: "3vh" }}
+          className='mobile-only'>
+          <Timer className='timer' />
+        </div>
+        <div
+          style={{ position: "fixed", right: "1vw", bottom: "11.8vh" }}
+          className='mobile-only'>
+          <Scorer team={1} />
+        </div>
+        <div
+          style={{ position: "fixed", right: "1vw", bottom: "2vh" }}
+          className='mobile-only'>
+          <Scorer team={2} className='Scorer' />
+        </div>
       </div>
     </div>
   );

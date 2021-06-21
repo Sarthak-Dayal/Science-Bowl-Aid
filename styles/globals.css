@@ -315,7 +315,17 @@ a {
   margin-right: 5px;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media only screen and (max-width: 650px) {
+  .mobile-only {
+    display: block;
+  }
+  .draggable {
+    display: none;
+  }
   #Scorer h3 {
     text-align: center;
     font-family: "Roboto";
@@ -367,6 +377,62 @@ a {
   .text {
     font-size: 24px;
     margin-bottom: 10px;
+  }
+  body {
+    overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #Scorer h3 {
+    font-size: 4.5vw;
+  }
+
+  #Scorer button {
+    font-size: 3vw;
+    text-align: center;
+    width: 12vw;
+    height: 6vw;
+    border-radius: 0.5vw;
+    margin: 0px 1.25vw;
+    font-family: "Roboto";
+    padding: 0px 2.5vw;
+  }
+  #Scorer p {
+    padding: 1vw 2.5vw 0px 2.5vw;
+    margin: 0px 10px;
+    font-size: 3.75vw;
+    background-color: #3b575b;
+    font-family: "Roboto";
+  }
+  #Scorer {
+    width: 67.5vw;
+    height: 20vw;
+    background-color: #073645;
+    border-radius: 0.75vw;
+    color: white;
+  }
+  #Timer {
+    height: 35vw;
+    width: 38.75vw;
+  }
+  .dangerBtn,
+  .primaryBtn {
+    width: 10vw;
+    height: 10vw;
+    font-size: 3vw;
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 3vw;
+  }
+
+  .text {
+    font-size: 6vw;
+    margin-bottom: 2.5vw;
   }
   body {
     overflow-x: scroll;

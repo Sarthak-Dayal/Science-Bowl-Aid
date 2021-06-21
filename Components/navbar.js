@@ -66,7 +66,9 @@ const Navbar = () => {
                   setSelectedIndex(null);
                 }}
               />
-              <h1 style={{ fontSize: 20, margin: 0 }}>Set {selectedIndex}</h1>
+              <h1 style={{ fontSize: "1.2vw", margin: 0 }}>
+                Set {selectedIndex}
+              </h1>
             </div>
           ) : (
             <></>
